@@ -12,5 +12,11 @@ spin.forEach(item => {
 		return spinAnimation(1.5)
 	}).then(() => {
 		item.style.animation = 'spin 20s infinite linear';
+
+		setInterval(() => {
+			const random = Math.random().toFixed(2) * 1.2;
+			if (random < 0.5) return
+			item.firstElementChild.style.transform = `scale(${random})`
+		}, 1000);
 	});
 });

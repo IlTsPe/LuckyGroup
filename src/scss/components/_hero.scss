@@ -61,14 +61,12 @@
 	}
 
 	&__users {
+		@include flex-v-center;
 		margin-top: var(--indent-50);
-		display: flex;
-		align-items: center;
 		column-gap: 12px;
 
 		&-list {
-			display: flex;
-			align-items: center;
+			@include flex-v-center;
 		}
 
 		&-item {
@@ -204,8 +202,8 @@
 			img {
 				display: block;
 				border-radius: 100%;
-				width: 150px;
-				transform: rotate(calc(360deg / -6 * var(--i)));
+				width: 140px;
+				transition: 0.5s ease;
 			}
 		}
 	}

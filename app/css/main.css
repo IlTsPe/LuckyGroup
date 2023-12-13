@@ -513,13 +513,13 @@ body {
   margin-bottom: var(--indent-50);
 }
 .hero__users {
-  margin-top: var(--indent-50);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: var(--indent-50);
   -webkit-column-gap: 12px;
   -moz-column-gap: 12px;
   column-gap: 12px;
@@ -679,10 +679,10 @@ body {
 .carousel__spin li img {
   display: block;
   border-radius: 100%;
-  width: 150px;
-  -webkit-transform: rotate(calc(-60deg * var(--i)));
-  -ms-transform: rotate(calc(-60deg * var(--i)));
-  transform: rotate(calc(-60deg * var(--i)));
+  width: 140px;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 @-webkit-keyframes spin {
