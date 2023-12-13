@@ -608,7 +608,7 @@ body {
   left: 10%;
   width: 650px;
   height: 650px;
-  background-image: url(../../img/circles.png);
+  background-image: url(../img/circles.png);
   background-repeat: no-repeat;
   background-position: center;
 }
