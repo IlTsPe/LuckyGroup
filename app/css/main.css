@@ -170,6 +170,12 @@ body {
   padding: 0 15px;
 }
 
+.noScroll {
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
 .main-button button {
   display: block;
   padding: 9px 24px;

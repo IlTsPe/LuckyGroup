@@ -2,14 +2,16 @@ const headerNav = document.querySelector('.header__list');
 const burgerContainer = document.querySelector('.burger');
 const burgerButton = document.querySelector('.burger__button');
 const overlay = document.querySelector('.overlay');
+const body = document.querySelector('body');
 
-const stateActiveHandler = (elem, selector) => elem.classList.toggle(`${selector}`);
-const removeActiveHandler = (elem, selector) => elem.classList.remove(`${selector}`);
+const stateActiveHandler = (elem, selector) => elem.classList.toggle(selector);
+const removeActiveHandler = (elem, selector) => elem.classList.remove(selector);
 
 burgerContainer.addEventListener('click', () => {
 	stateActiveHandler(headerNav, 'header__list--active');
 	stateActiveHandler(burgerButton, 'burger__button--active');
 	stateActiveHandler(overlay, 'overlay--active');
+	stateActiveHandler(body, 'noScroll');
 });
 
 document.addEventListener('click', (e) => {
@@ -18,5 +20,6 @@ document.addEventListener('click', (e) => {
 		removeActiveHandler(headerNav, 'header__list--active');
 		removeActiveHandler(burgerButton, 'burger__button--active');
 		removeActiveHandler(overlay, 'overlay--active');
+		removeActiveHandler(body, 'noScroll');
 	}
 });
